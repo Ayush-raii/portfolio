@@ -30,7 +30,9 @@ const lightboxCaption = document.getElementById('lightboxCaption');
 const lightboxClose = document.querySelector('.lightbox-close');
 const lightboxPrev = document.querySelector('.lightbox-prev');
 const lightboxNext = document.querySelector('.lightbox-next');
-const artCards = document.querySelectorAll('.art-card[data-lightbox], .project-img[data-lightbox]');
+
+// Gallery lightbox - only art-card images
+const artCards = document.querySelectorAll('.art-card[data-lightbox]');
 
 let currentImageIndex = 0;
 const images = Array.from(artCards).map(card => ({
@@ -38,11 +40,24 @@ const images = Array.from(artCards).map(card => ({
     title: card.dataset.title
 }));
 
-// Open lightbox
+// Gallery image lightbox
 artCards.forEach((card, index) => {
     card.addEventListener('click', () => {
         currentImageIndex = index;
         openLightbox(index);
+    });
+});
+
+// Project image lightbox - separate, no navigation
+const projectImages = document.querySelectorAll('.project-img[data-lightbox]');
+projectImages.forEach(img => {
+    img.addEventListener('click', () => {
+        lightboxImage.src = img.dataset.lightbox;
+        lightboxCaption.textContent = img.dataset.title;
+        lightboxModal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+        lightboxPrev.style.display = 'none';
+        lightboxNext.style.display = 'none';
     });
 });
 
@@ -52,6 +67,8 @@ function openLightbox(index) {
         lightboxCaption.textContent = images[index].title;
         lightboxModal.classList.add('active');
         document.body.style.overflow = 'hidden';
+        lightboxPrev.style.display = 'block';
+        lightboxNext.style.display = 'block';
     }
 }
 
