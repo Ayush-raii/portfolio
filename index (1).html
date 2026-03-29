@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush Rai | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- ─── Nav ──────────────────────────────────────────────────────────────── -->
+    <nav>
+        <div class="nav-inner">
+            <a href="#hero" class="nav-logo">
+                <span class="acc">A</span>R<span class="sub">/ portfolio</span>
+            </a>
+            <button id="menuBtn" aria-label="Menu">
+      <i data-lucide="menu" style="width:20px;height:20px;"></i>
+    </button>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+        <div id="mobileMenu">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- ─── Hero ──────────────────────────────────────────────────────────────── -->
+    <header id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-orb1"></div>
+        <div class="hero-inner">
+            <div class="hero-avatar-wrap">
+                <div class="hero-avatar">
+                    <img src="ayush-rai-img.jpg" alt="Ayush Rai" onerror="this.style.display='none'">
+                </div>
+                <div class="avatar-tag">&lt;/code + design&gt;</div>
+            </div>
+
+            <div class="hero-text">
+                <div class="badge fade-up">
+                    <span class="badge-dot dot-blink"></span> Available for projects
+                </div>
+                <h1 class="hero-title fade-up-1">
+                    Ayush Rai<span class="accent">.</span>
+                    <span class="sub">Building Code, Designing Brands.</span>
+                </h1>
+                <p class="hero-desc fade-up-2">
+                    2nd-year CSE student at NMAMIT &amp; Design Co-Head at TUDAR. Bridging the gap between functional code and stunning visual design.
+                </p>
+                <div class="hero-btns fade-up-2">
+                    <a href="#contact" class="btn-primary glow-btn">
+                        <i data-lucide="download" style="width:16px;height:16px;"></i> Download Resume
+                    </a>
+                    <a href="https://github.com/Ayush-raii" target="_blank" rel="noopener noreferrer" class="btn-outline">
+                        <i data-lucide="github" style="width:16px;height:16px;"></i> View GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ─── About ─────────────────────────────────────────────────────────────── -->
+    <section id="about">
+        <div class="container">
+            <div class="reveal">
+                <div class="section-tag">01 / About</div>
+                <h2 class="section-title">Who I Am</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="about-grid">
+                <div class="card reveal">
+                    <p class="about-text">
+                        I’m Ayush Rai —<strong> a builder, designer, and developer </strong>passionate about creating meaningful digital experiences. I work at the intersection of <strong> AI, web development, and visual design</strong>, where I turn
+                        ideas into polished products that are both functional and visually engaging. As the founder of <strong>RaiArts</strong>, I’ve worked on <strong> branding, banners, and digital interfaces </strong>for clients, helping bring their
+                        ideas to life. Currently, I’m serving as the <strong>Design Co-Head </strong>at TUDAR (NMAMIT), leading creative initiatives and collaborating on design-driven projects. Beyond technology, I have a strong creative side — I enjoy
+                        <strong>sketching, photography, and videography</strong>, and occasionally sell my artwork. I also have a deep interest in music as a<strong> flutist </strong>and stay active through sports like <strong>badminton and volleyball</strong>                        .
+                    </p>
+                </div>
+                <div class="stat-cards reveal">
+                    <div class="card stat-card">
+                        <div class="stat-num">2+</div>
+                        <div class="stat-label">Years of Design</div>
+                    </div>
+                    <div class="card stat-card">
+                        <div class="stat-num">10+</div>
+                        <div class="stat-label">Projects Shipped</div>
+                    </div>
+                    <div class="card stat-card">
+                        <div class="stat-num">1+</div>
+                        <div class="stat-label">Years of Coding</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── Skills ────────────────────────────────────────────────────────────── -->
+    <section id="skills">
+        <div class="container">
+            <div class="reveal">
+                <div class="section-tag">02 / Skills</div>
+                <h2 class="section-title">My Toolkit</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Dev -->
+                <div class="card reveal">
+                    <div class="skill-header">
+                        <div class="skill-icon"><i data-lucide="code-2" style="width:20px;height:20px;"></i></div>
+                        <div class="skill-title">Development</div>
+                    </div>
+                    <div class="skill-list">
+                        <div>
+                            <div class="skill-row"><span class="skill-name">C</span><span class="skill-level">Advanced</span></div>
+                            <div class="skill-track">
+                                <div class="skill-bar" style="width:85%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="skill-row"><span class="skill-name">Java</span><span class="skill-level">Intermediate</span></div>
+                            <div class="skill-track">
+                                <div class="skill-bar" style="width:75%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="skill-row"><span class="skill-name">Frontend</span><span class="skill-level">Intermediate</span></div>
+                            <div class="skill-track">
+                                <div class="skill-bar" style="width:73%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="skill-row"><span class="skill-name">SQL</span><span class="skill-level">Intermediate</span></div>
+                            <div class="skill-track">
+                                <div class="skill-bar" style="width:65%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Design -->
+                <div class="card reveal">
+                    <div class="skill-header">
+                        <div class="skill-icon"><i data-lucide="palette" style="width:20px;height:20px;"></i></div>
+                        <div class="skill-title">Design</div>
+                    </div>
+                    <div class="skill-list">
+                        <div>
+                            <div class="skill-row"><span class="skill-name">Photoshop</span><span class="skill-level">Advanced</span></div>
+                            <div class="skill-track">
+                                <div class="skill-bar" style="width:90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="skill-row"><span class="skill-name">CapCut</span><span class="skill-level">Advanced</span></div>
+                            <div class="skill-track">
+                                <div class="skill-bar" style="width:85%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="skill-row"><span class="skill-name">UI/UX Design</span><span class="skill-level">Intermediate</span></div>
+                            <div class="skill-track">
+                                <div class="skill-bar" style="width:75%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="skill-row"><span class="skill-name">Brand Identity</span><span class="skill-level">Advanced</span></div>
+                            <div class="skill-track">
+                                <div class="skill-bar" style="width:88%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── Projects ──────────────────────────────────────────────────────────── -->
+    <section id="projects">
+        <div class="container">
+            <div class="reveal">
+                <div class="section-tag">03 / Projects</div>
+                <h2 class="section-title">Featured Work</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="projects-grid">
+                <!-- ODO - wide -->
+                <div class="card project-wide reveal">
+                    <div class="project-wide-inner">
+                        <div style="flex:1;">
+                            <div class="project-tags">
+                                <span class="tag tag-electric">Startup</span>
+                                <span class="tag tag-smoke">Web Design</span>
+                            </div>
+                            <div class="project-title project-title-lg"> Food Delivery</div>
+                            <p class="project-desc">A full-scale food delivery startup concept — from initial branding and app UI to delivery flow mockups. Designed the complete user experience covering ordering, tracking, and restaurant management dashboards.Which is under
+                                building stage</p>
+                            <a href="#" class="btn-sm">
+                                <i data-lucide="layout" style="width:15px;height:15px;"></i> View Mockups
+                            </a>
+                        </div>
+                        <div class="project-img">
+                            <img src="food delivery app.png" alt="FoodApp - Food Delivery Platform" style="width:100%; height:auto; border-radius:8px; object-fit:contain;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Amazon Clone -->
+                <div class="card reveal">
+                    <div style="position:relative;z-index:1;">
+                        <div class="project-tags"><span class="tag tag-electric">Web Dev</span></div>
+                        <div class="project-title">Amazon Clone</div>
+                        <p class="project-desc">A functional e-commerce clone built to understand full-stack architecture, authentication flows, and payment integration patterns.</p>
+                        <a href="https://github.com/Ayush-raii/Amazon-clone" target="_blank" rel="noopener noreferrer" class="btn-sm">
+                            <i data-lucide="github" style="width:15px;height:15px;"></i> View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- TUDAR -->
+                <div class="card reveal">
+                    <div style="position:relative;z-index:1;">
+                        <div class="project-tags">
+                            <span class="tag tag-electric">Branding</span>
+                            <span class="tag tag-smoke">Leadership</span>
+                        </div>
+                        <div class="project-title">TUDAR Design Wing</div>
+                        <p class="project-desc">Leading the design wing as Co-Head — creating event posters, social media assets, merchandise designs, and maintaining a consistent brand identity across all touchpoints.</p>
+                    </div>
+                </div>
+
+                <!-- QR Menu - wide -->
+                <div class="card project-wide reveal">
+                    <div class="qr-card-inner">
+                        <div class="qr-icon-wrap">
+                            <i data-lucide="utensils" style="width:24px;height:24px;"></i>
+                        </div>
+                        <div>
+                            <div class="project-tags">
+                                <span class="tag tag-electric">UI Design</span>
+                                <span class="tag tag-smoke">Hospitality</span>
+                            </div>
+                            <div class="project-title">QR Menu Systems</div>
+                            <p class="project-desc">Designed and developed digital QR-based menus for <strong style="color:#fff;">Hotel Samay</strong> and <strong style="color:#fff;">The Udupi Express</strong> — creating seamless, mobile E-menu experiences.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── Gallery ───────────────────────────────────────────────────────────── -->
+    <section id="gallery">
+        <div class="container">
+            <div class="reveal">
+                <div class="section-tag">04 / Gallery</div>
+                <h2 class="section-title">Rai Arts</h2>
+                <div class="section-line"></div>
+                <p class="section-desc">Sketches, illustrations, and graphic design posters — the creative side beyond the screen.</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="art-card reveal" data-lightbox="PORSCHE-911.jpg" data-title="Porsche 911 Design  (Photoshop)">
+                    <img src="PORSCHE-911.jpg" alt="Porsche 911 Design" class="art-image">
+                    <div class="art-overlay"><span class="art-label">Porsche 911 </span></div>
+                </div>
+                <div class="art-card reveal" data-lightbox="BUGATTI CHIRON.jpg" data-title="Bugatti Chiron   (Photoshop)">
+                    <img src="BUGATTI CHIRON.jpg" alt="Bugatti Chiron" class="art-image">
+                    <div class="art-overlay"><span class="art-label">Bugatti Chiron <br> (Photoshop)</span></div>
+                </div>
+                <div class="art-card reveal" data-lightbox="sketch 1 yaksha.jpg" data-title="Traditional Art  ">
+                    <img src="sketch 1 yaksha.jpg" alt="Deity Art Study" class="art-image">
+                    <div class="art-overlay"><span class="art-label">Traditional Art </span></div>
+                </div>
+                <div class="art-card reveal" data-lightbox="sketch 2.jpg" data-title="Art Sketch  ">
+                    <img src="sketch 2.jpg" alt="Artistic Sketch" class="art-image">
+                    <div class="art-overlay"><span class="art-label">Art Sketch</span></div>
+                </div>
+                <div class="art-card reveal" data-lightbox="7DAY TUDARASIRI.jpg" data-title="Tudara Siri Festival (Photoshop)">
+                    <img src="7DAY TUDARASIRI.jpg" alt="Tudara Siri Festival" class="art-image">
+                    <div class="art-overlay"><span class="art-label">Tudara Siri </span></div>
+                </div>
+                <div class="art-card reveal" data-lightbox="final dress code.jpg" data-title="Event Poster (Photoshop)">
+                    <img src="final dress code.jpg" alt="Event Poster" class="art-image">
+                    <div class="art-overlay"><span class="art-label">Event Poster</span></div>
+                </div>
+                <div class="art-card reveal" data-lightbox="KING.jpg" data-title="RCB Cricket poster (Photoshop)">
+                    <img src="KING.jpg" alt="KL Cricket Poster" class="art-image">
+                    <div class="art-overlay"><span class="art-label">RCB Cricket poster </span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── Contact ───────────────────────────────────────────────────────────── -->
+    <section id="contact">
+        <div class="container">
+            <div class="reveal contact-center">
+                <div class="section-tag">05 / Contact</div>
+                <h2 class="section-title">Let's Connect</h2>
+                <div class="section-line"></div>
+                <p class="contact-desc">Have a project in mind or just want to chat? Reach out through any of these channels.</p>
+            </div>
+
+            <div class="contact-links reveal">
+                <a href="mailto:ayush@example.com" class="contact-card">
+                    <div class="contact-icon"><i data-lucide="mail" style="width:20px;height:20px;"></i></div>
+                    <div class="contact-info">
+                        <div class="contact-type">Email</div>
+                        <div class="contact-val">ayush3@gmail.com</div>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/ayushrai19/" target="_blank" rel="noopener noreferrer" class="contact-card">
+                    <div class="contact-icon"><i data-lucide="linkedin" style="width:20px;height:20px;"></i></div>
+                    <div class="contact-info">
+                        <div class="contact-type">LinkedIn</div>
+                        <div class="contact-val">Ayush Rai</div>
+                    </div>
+                </a>
+                <a href="https://github.com/Ayush-raii" target="_blank" rel="noopener noreferrer" class="contact-card">
+                    <div class="contact-icon"><i data-lucide="github" style="width:20px;height:20px;"></i></div>
+                    <div class="contact-info">
+                        <div class="contact-type">GitHub</div>
+                        <div class="contact-val">ayushrai</div>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/ayush__creations____/" target="_blank" rel="noopener noreferrer" class="contact-card">
+                    <div class="contact-icon"><i data-lucide="instagram" style="width:20px;height:20px;"></i></div>
+                    <div class="contact-info">
+                        <div class="contact-type">Instagram</div>
+                        <div class="contact-val">@ayush_creations_____</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── Lightbox Modal ─────────────────────────────────────────────────────── -->
+    <div id="lightboxModal" class="lightbox-modal">
+        <div class="lightbox-content">
+            <button class="lightbox-close">&times;</button>
+            <img id="lightboxImage" src="" alt="Gallery Image" class="lightbox-image">
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+            <button class="lightbox-prev">&#10094;</button>
+            <button class="lightbox-next">&#10095;</button>
+        </div>
+    </div>
+
+    <!-- ─── Footer ────────────────────────────────────────────────────────────── -->
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-copy">© 2025 <span>Ayush Rai</span> — Built with passion &amp; pixels</div>
+            <div class="footer-brand">
+                <span class="footer-dot dot-blink"></span> RaiArts
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
