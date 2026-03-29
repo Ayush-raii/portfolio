@@ -30,7 +30,7 @@ const lightboxCaption = document.getElementById('lightboxCaption');
 const lightboxClose = document.querySelector('.lightbox-close');
 const lightboxPrev = document.querySelector('.lightbox-prev');
 const lightboxNext = document.querySelector('.lightbox-next');
-const artCards = document.querySelectorAll('.art-card[data-lightbox]');
+const artCards = document.querySelectorAll('.art-card[data-lightbox], .project-img[data-lightbox]');
 
 let currentImageIndex = 0;
 const images = Array.from(artCards).map(card => ({
